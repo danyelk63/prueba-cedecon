@@ -1,0 +1,407 @@
+//Desktop
+@media (min-width: 720px) {
+    .principal {
+        height: 100%;
+        background: radial-gradient(hsl(214, 47%, 23%), hsl(237, 49%, 15%));
+        padding-top: 30px;
+
+        .text-white {
+            color: white;
+        }
+
+        .border {
+            border: 1px solid hsl(217, 16%, 45%);
+            border-radius: 11px;
+        }
+
+        .header {
+            padding: 20px;
+            position: relative;
+            margin-bottom: 90px;
+            .tittle {
+                display: inline-grid;
+                b {
+                    font-size: 25px;
+                    line-height: 20px;
+                }
+            }
+            .score {
+                background-color: white;
+                width: 140px;
+                height: 71%;
+                top: 20px;
+                right: 20px;
+                position: absolute;
+                border-radius: 7px;
+                b {
+                    margin: auto;
+                    display: flex;
+                    width: fit-content;
+                    letter-spacing: 3px;
+                    color: hsl(229, 64%, 46%);
+                    margin-top: 10px;
+                    margin-bottom: 10px;
+                }
+                h1 {
+                    font-size: 55px;
+                    color: hsl(229, 25%, 31%);
+                }
+            }
+        }
+
+        .content {
+            width: fit-content;
+            height: fit-content;
+            margin: auto;
+            position: relative;
+            .pentagon {
+                margin: auto;
+            }
+
+            .options {
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                top: 0px;
+                .option {
+                    position: absolute;
+                    width: 120px;
+                    height: 120px;
+                    align-items: center;
+                    display: flex;
+                    border-radius: 50%;
+                    cursor: pointer;
+                    .background {
+                        background-color: white;
+                        width: 80px;
+                        height: 80px;
+                        border-radius: 100%;
+                        align-items: center;
+                        display: flex;
+                        margin: auto;
+                        img {
+                            margin: auto;
+                        }
+                    }
+                }
+
+                .rock {
+                    top: -27px;
+                    left: 110px;
+                    background: radial-gradient(hsl(349, 71%, 52%), hsl(349, 70%, 56%));
+                }
+
+                .paper {
+                    right: -31px;
+                    top: 68px;
+                    background: radial-gradient(hsl(230, 89%, 62%), hsl(230, 89%, 65%));
+                }
+
+                .scissors {
+                    bottom: -28px;
+                    right: 20px;
+                    background: radial-gradient(hsl(39, 89%, 49%), hsl(40, 84%, 53%));
+                }
+
+                .lizard {
+                    bottom: -28px;
+                    left: 20px;
+                    background: radial-gradient(hsl(261, 73%, 60%), hsl(261, 72%, 63%));
+                }
+
+                .spock {
+                    left: -31px;
+                    top: 68px;
+                    background: radial-gradient(hsl(189, 59%, 53%), hsl(189, 58%, 57%));
+                }
+            }
+        }
+
+        .result {
+            margin: auto;
+            h1 {
+                color: white;
+                margin-bottom: 30px;
+            }
+            .option {
+                width: 200px;
+                height: 200px;
+                align-items: center;
+                display: flex;
+                border-radius: 50%;
+                cursor: pointer;
+                margin: auto;
+                .background {
+                    background-color: white;
+                    width: 140px;
+                    height: 140px;
+                    border-radius: 100%;
+                    align-items: center;
+                    display: flex;
+                    margin: auto;
+                    img {
+                        margin: auto;
+                        width: 80px;
+                    }
+                }
+            }
+
+            .rock {
+                background: radial-gradient(hsl(349, 71%, 52%), hsl(349, 70%, 56%));
+            }
+
+            .paper {
+                background: radial-gradient(hsl(230, 89%, 62%), hsl(230, 89%, 65%));
+            }
+
+            .scissors {
+                background: radial-gradient(hsl(39, 89%, 49%), hsl(40, 84%, 53%));
+            }
+
+            .lizard {
+                background: radial-gradient(hsl(261, 73%, 60%), hsl(261, 72%, 63%));
+            }
+
+            .spock {
+                background: radial-gradient(hsl(189, 59%, 53%), hsl(189, 58%, 57%));
+            }
+
+            .button-restart {
+                width: fit-content;
+                height: fit-content;
+                background-color: white;
+                padding: 10px 44px;
+                margin: auto;
+                border-radius: 10px;
+                cursor: pointer;
+                display: flex;
+                align-items: center;
+                h5 {
+                    color: hsl(229, 25%, 31%);
+                    font-size: 20px;
+                    margin-bottom: 0px;
+                }
+            }
+        }
+
+        .button-rules {
+            width: fit-content;
+            padding: 10px 38px;
+            position: absolute;
+            right: 30px;
+            bottom: 30px;
+            cursor: pointer;
+            b {
+                color: white;
+                font-size: 25px;
+            }
+        }
+    }
+}
+
+//Movile
+@media (max-width: 719px) {
+    .principal {
+        height: 100%;
+        background: radial-gradient(hsl(214, 47%, 23%), hsl(237, 49%, 15%));
+        padding-top: 30px;
+
+        .text-white {
+            color: white;
+        }
+
+        .border {
+            border: 1px solid hsl(217, 16%, 45%);
+            border-radius: 11px;
+        }
+
+        .header {
+            padding: 20px;
+            position: relative;
+            margin-bottom: 90px;
+            width: 80%;
+            .tittle {
+                display: inline-grid;
+                b {
+                    font-size: 15px;
+                    line-height: 15px;
+                }
+            }
+            .score {
+                background-color: white;
+                width: 94px;
+                height: 78px;
+                top: 20px;
+                right: 20px;
+                position: absolute;
+                border-radius: 7px;
+                b {
+                    margin: auto;
+                    display: flex;
+                    width: fit-content;
+                    color: hsl(229, 64%, 46%);
+                    margin-top: 10px;
+                    margin-bottom: 10px;
+                }
+                h1 {
+                    font-size: 40px;
+                    color: hsl(229, 25%, 31%);
+                }
+            }
+        }
+
+        .content {
+            width: fit-content;
+            height: fit-content;
+            margin: auto;
+            position: relative;
+            .pentagon {
+                margin: auto;
+                width: 235px;
+                height: auto;
+            }
+
+            .options {
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                top: 0px;
+                .option {
+                    position: absolute;
+                    width: 80px;
+                    height: 80px;
+                    align-items: center;
+                    display: flex;
+                    border-radius: 50%;
+                    cursor: pointer;
+                    .background {
+                        background-color: white;
+                        width: 50px;
+                        height: 50px;
+                        border-radius: 100%;
+                        align-items: center;
+                        display: flex;
+                        margin: auto;
+                        img {
+                            margin: auto;
+                            width: 30px;
+                            height: auto;
+                        }
+                    }
+                }
+
+                .rock {
+                    top: -27px;
+                    left: 80px;
+                    background: radial-gradient(hsl(349, 71%, 52%), hsl(349, 70%, 56%));
+                }
+
+                .paper {
+                    right: -31px;
+                    top: 50px;
+                    background: radial-gradient(hsl(230, 89%, 62%), hsl(230, 89%, 65%));
+                }
+
+                .scissors {
+                    bottom: -28px;
+                    right: 20px;
+                    background: radial-gradient(hsl(39, 89%, 49%), hsl(40, 84%, 53%));
+                }
+
+                .lizard {
+                    bottom: -28px;
+                    left: 20px;
+                    background: radial-gradient(hsl(261, 73%, 60%), hsl(261, 72%, 63%));
+                }
+
+                .spock {
+                    left: -31px;
+                    top: 50px;
+                    background: radial-gradient(hsl(189, 59%, 53%), hsl(189, 58%, 57%));
+                }
+            }
+        }
+
+        .result {
+            margin: auto;
+            h1 {
+                color: white;
+                margin-bottom: 30px;
+                font-size: 15px;
+            }
+            .option {
+                width: 120px;
+                height: 120px;
+                align-items: center;
+                display: flex;
+                border-radius: 50%;
+                cursor: pointer;
+                margin: auto;
+                .background {
+                    background-color: white;
+                    width: 80px;
+                    height: 80px;
+                    border-radius: 100%;
+                    align-items: center;
+                    display: flex;
+                    margin: auto;
+                    img {
+                        margin: auto;
+                        width: 40px;
+                        height: auto;
+                    }
+                }
+            }
+
+            .rock {
+                background: radial-gradient(hsl(349, 71%, 52%), hsl(349, 70%, 56%));
+            }
+
+            .paper {
+                background: radial-gradient(hsl(230, 89%, 62%), hsl(230, 89%, 65%));
+            }
+
+            .scissors {
+                background: radial-gradient(hsl(39, 89%, 49%), hsl(40, 84%, 53%));
+            }
+
+            .lizard {
+                background: radial-gradient(hsl(261, 73%, 60%), hsl(261, 72%, 63%));
+            }
+
+            .spock {
+                background: radial-gradient(hsl(189, 59%, 53%), hsl(189, 58%, 57%));
+            }
+
+            .button-restart {
+                width: fit-content;
+                height: fit-content;
+                background-color: white;
+                padding: 10px 44px;
+                margin: auto;
+                border-radius: 10px;
+                cursor: pointer;
+                display: flex;
+                align-items: center;
+                h5 {
+                    color: hsl(229, 25%, 31%);
+                    font-size: 20px;
+                    margin-bottom: 0px;
+                }
+            }
+        }
+
+        .button-rules {
+            width: fit-content;
+            padding: 10px 38px;
+            position: absolute;
+            right: 30px;
+            bottom: 30px;
+            cursor: pointer;
+            b {
+                color: white;
+                font-size: 25px;
+            }
+        }
+    }
+}

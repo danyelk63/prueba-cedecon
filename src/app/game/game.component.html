@@ -1,0 +1,82 @@
+<div class="principal">
+    <div class="row header border col-md-6 mx-auto">
+        <div class="tittle">
+            <b class="text-white">
+                ROCK
+            </b>
+            <b class="text-white">
+                PAPER
+            </b>
+            <b class="text-white">
+                SCISSORS
+            </b>
+            <b class="text-white">
+                LIZARD
+            </b>
+            <b class="text-white">
+                SPOCK
+            </b>
+        </div>
+        <div class="score">
+            <b>SCORE</b>
+            <h1 class="text-center">{{score}}</h1>
+        </div>
+    </div>
+    <div class="content" id="content">
+        <img class="pentagon" src="../../assets/bg-pentagon.svg" alt="">
+        <div class="options">
+            <div class="option rock" (click)="setOption('rock')">
+                <div class="background">
+                    <img src="../../assets/icon-rock.svg" alt="">
+                </div>
+            </div>
+            <div class="option paper" (click)="setOption('paper')">
+                <div class="background">
+                    <img src="../../assets/icon-paper.svg" alt="">
+                </div>
+            </div>
+            <div class="option scissors" (click)="setOption('scissors')">
+                <div class="background">
+                    <img src="../../assets/icon-scissors.svg" alt="">
+                </div>
+            </div>
+            <div class="option lizard" (click)="setOption('lizard')">
+                <div class="background">
+                    <img src="../../assets/icon-lizard.svg" alt="">
+                </div>
+            </div>
+            <div class="option spock" (click)="setOption('spock')">
+                <div class="background">
+                    <img src="../../assets/icon-spock.svg" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="result row col-md-8" id="result">
+        <div class="col-6 middle">
+            <h1 class="text-center">YOU PICKED</h1>
+            <div class="option" id="option-result">
+                <div class="background">
+                    <img src="../../assets/icon-{{selected}}.svg" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="col-6 middle">
+            <h1 class="text-center">THE HOUSE PICKED</h1>
+            <div class="option" id="option-response">
+                <div class="background">
+                    <img src="../../assets/icon-{{response}}.svg" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="col-12" [ngStyle]="{'display': message == 0 ? 'none' : 'block' }">
+            <h1 class="text-center">{{message == 1 ? "YOU WIN" : message == 2 ? "YOU LOSE" : "TIE"}}</h1>
+            <div class="button-restart">
+                <h5 class="text-center" (click)="again()">PLAY AGAIN</h5>
+            </div>
+        </div>
+    </div>
+    <div class="border button-rules" (click)="openRules()">
+        <b>RULES</b>
+    </div>
+</div>
